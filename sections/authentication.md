@@ -21,3 +21,22 @@ Content-Length: 61
 
 {"mozes_id":"nnnnnnnnn","project_id":nnnnn,"dob":"19750312"}
 ```
+
+Response Format
+----------------
+JSON responses from the API follow a standard structure:
+```json
+{
+    "status": {
+        "code": 0,
+        "name": "SHORT_NAME",
+        "description": "Human readable description."
+    },
+    "response": {
+        "arbitrary": "data",
+        "integer": 184732,
+        "string": "value"
+    }
+}
+```
+The "status" block contains a numeric return code, an alphanumeric code name, and longer description. The "response" block contains arbitrary data returned by the Web service called.
