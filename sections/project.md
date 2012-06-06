@@ -2,7 +2,7 @@
 
 ## Get Projects
 
-`POST /v1/project/get_all` - Gets all projects under accounts that are available to the current API key.
+`/v1/project/get_all` - Gets all projects under accounts that are available to the current API key.
 
 An optional account ID may be passed, to restrict projects to a certain account. This is useful if your API key has access to multiple accounts and you only want to see a certain account's projects.
 
@@ -60,7 +60,7 @@ An optional account ID may be passed, to restrict projects to a certain account.
 
 ## Add Subscriber
 
-`POST /v1/project/subscribe` - Subscribes a user to the given project.
+`/v1/project/subscribe` - Subscribes a user to the given project.
 
 If the user is under the age of 13, then, under COPPA guidelines, the user's phone number is flagged, and an error is returned. Otherwise, the user is subscribed to the mobile list and an SMS is sent to the user's mobile phone confirming the subscription.
 
@@ -115,7 +115,7 @@ If the user is under the age of 13, then, under COPPA guidelines, the user's pho
 
 ## Remove Subscriber
 
-`POST /v1/project/unsubscribe` - Unsubscribes a user from the given project.
+`/v1/project/unsubscribe` - Unsubscribes a user from the given project.
 
 ### Request Parameters
 
@@ -157,7 +157,7 @@ If the user is under the age of 13, then, under COPPA guidelines, the user's pho
 
 ## Get Subscription Changes
 
-`POST /v1/project/get_subscriber_updates` - Gets list subscription changes for a project since a given date
+`/v1/project/get_subscriber_updates` - Gets list subscription changes for a project since a given date
 
 ### Request Parameters
 

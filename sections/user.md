@@ -2,7 +2,7 @@
 
 ## Lookup
 
-`POST /v1/user/lookup` - Creates a new Mozes ID or retrieves an existing mozes\_id for a user based on the given mobile number. 
+`/v1/user/lookup` - Creates a new Mozes ID or retrieves an existing mozes\_id for a user based on the given mobile number. 
 
 ### Request Parameters
 
@@ -53,7 +53,7 @@
 
 ## Get Subscribed Projects
 
-`POST /v1/user/get_subscribed_projects` - Get array of projects/lists that the given user is subscribed to. 
+`/v1/user/get_subscribed_projects` - Get array of projects/lists that the given user is subscribed to. 
 
 ### Request Parameters
 
