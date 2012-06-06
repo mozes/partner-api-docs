@@ -51,7 +51,7 @@
 
 
 
-## Lookup
+## Get Subscribed Projects
 
 `POST /v1/user/get_subscribed_projects` - Get array of projects/lists that the given user is subscribed to. 
 
