@@ -11,7 +11,7 @@ Requests are sent using HTTP POST. The "Content-Type" header of the request must
 
 ```
 User-Agent: curl/7.12.1 (i686-redhat-linux-gnu) libcurl/7.12.1 OpenSSL/0.9.7a zlib/1.2.1.2 libidn/0.5.6
-Host: api.mozes.com
+Host: partnerapi.mozes.com
 Pragma: no-cache
 Accept: */*
 Content-Type: application/json
@@ -19,7 +19,7 @@ X-API-Key: xxxxxx
 X-API-Shared-Secret: XXXXXXXXXXX
 Content-Length: 61
 
-{"mozes_id":"nnnnnnnnn","project_id":nnnnn,"dob":"19750312"}
+{"mozes_id":"#######","project_id":######,"dob":"########"}
 ```
 
 Response Format
