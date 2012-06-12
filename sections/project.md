@@ -183,7 +183,7 @@ If the user is under the age of 13, then, under COPPA guidelines, the user's pho
 
 ```json
 {
-    "project_id": "455327",
+    "project_id": 455327,
     "start_date": "2012-03-04T00:00:00Z"
 }
 ```

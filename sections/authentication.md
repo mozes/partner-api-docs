@@ -1,5 +1,11 @@
 # Authentication
 
+## Basics
+
+Partner API requests can be made via HTTP calls to `https://partnerapi.mozes.com/{version}/{endpoint}`. The current Partner API version is `v1`.
+
+Example: `https://partnerapi.mozes.com/v1/user/lookup`
+
 ## Headers
 
 API requests must include two headers, `X-API-Key` and `X-API-Shared-Secret`, which can be requested by contacting support@mozes.com or speaking to your client services representative. Because the API key and shared secret are sent in plain text, requests must be made over SSL.
