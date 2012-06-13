@@ -58,14 +58,13 @@ Currently Documented APIs
 * [Broadcast List](https://github.com/mozes/partner-api-docs/blob/master/sections/broadcast_list.md#broadcast-list "Broadcast List")
 * [Campaign](https://github.com/mozes/partner-api-docs/blob/master/sections/campaign.md#campaign "Campaign")
 * [Project](https://github.com/mozes/partner-api-docs/blob/master/sections/project.md#project "Project")
+* [Reports](https://github.com/mozes/partner-api-docs/blob/master/sections/reports.md#reports "Reports")
 * [User](https://github.com/mozes/partner-api-docs/blob/master/sections/user.md#mozes-user "User")
-
 
 APIs Pending Refreshed Documentation
 --------
 * Text to Screen and Pics to Screen
 * Live Vote
-* Reporting
 * RSS Feeds
 * Broadcasting
 
