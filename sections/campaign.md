@@ -13,6 +13,8 @@ For example: A consumer submits their mobile phone number on a web form. They ca
 
 `mozes_id` The ID of the user to whom you wish to begin the campaign flow.
 
+`channel_id` _Optional._ The channel ID corresponds to a specific choice in a vote campaign.
+
 ### Response Data
 
 `none`
@@ -22,7 +24,8 @@ For example: A consumer submits their mobile phone number on a web form. They ca
 ```json
 {
     "campaign_id": "97483",
-    "mozes_id": "123456"
+    "mozes_id": "123456",
+    "channel_id":"241512"
 }
 ```
 
