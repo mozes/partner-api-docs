@@ -50,6 +50,77 @@
 * The phone number is for a landline. Mozes only handles mobile numbers.
 
 
+## Lookup by Facebook Id
+
+`/v1/user/lookup_by_facebook_id` - Creates a new Mozes ID or retrieves an existing mozes\_id for a user based on the given Facebook User ID. 
+
+### Request Parameters
+
+`facebook_id` Numeric string containing the Facebook ID for the user (e.g., "1458541")
+
+### Response Data
+
+`mozes_id` The unique ID of the participating user as used by the Mozes Connect platform.
+
+### Example Request
+
+```json
+{
+    "facebook_id": "1458541"
+}
+```
+
+### Example Response
+
+```json
+{
+    "status": {
+        "code": 0,
+        "message": "OK",
+        "description": "OK"
+    },
+    "response": {
+        "mozes_id": "123456"
+    }
+}
+```
+
+
+## Lookup by Twitter Handle
+
+`/v1/user/lookup_by_twitter_handle` - Creates a new Mozes ID or retrieves an existing mozes\_id for a user based on the given Twitter handle. 
+
+### Request Parameters
+
+`twitter_handle` String containing the Twitter Handle for the user. Do _not_ include the "@" before the handle. (e.g., "my\_username")
+
+### Response Data
+
+`mozes_id` The unique ID of the participating user as used by the Mozes Connect platform.
+
+### Example Request
+
+```json
+{
+    "twitter_handle": "my_username"
+}
+```
+
+### Example Response
+
+```json
+{
+    "status": {
+        "code": 0,
+        "message": "OK",
+        "description": "OK"
+    },
+    "response": {
+        "mozes_id": "123456"
+    }
+}
+```
+
 
 ## Get Subscribed Projects
 
