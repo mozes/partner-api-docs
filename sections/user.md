@@ -1,5 +1,11 @@
 # Mozes User
 
+* [Lookup](#lookup)
+* [Lookup by Facebook ID](#lookup-by-facebook-id)
+* [Lookup by Twitter Handle](#lookup-by-twitter-handle)
+* [Get Subscribed Projects](#get-subscribed-projects)
+
+
 ## Lookup
 
 `/v1/user/lookup` - Creates a new Mozes ID or retrieves an existing mozes\_id for a user based on the given mobile number. 
