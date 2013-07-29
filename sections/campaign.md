@@ -3,6 +3,7 @@
 * [Cast Vote](#cast-vote)
 * [Get Vote Config](#get-vote-config)
 * [Start SMS Flow](#start-sms-flow)
+* [Submit Comment](#submit-comment)
 
 ## Cast Vote
 
@@ -10,7 +11,7 @@
 
 ### Request Parameters
 
-`campaign_id` The ID of the campaign that you wish to get configuration info for.
+`campaign_id` The ID of the vote campaign.
 
 `project_id` The ID of the project associated with this campaign.
 
@@ -181,3 +182,55 @@ For example: A consumer submits their mobile phone number on a web form. They ca
 `10004 : INVALID_MOZES_ID`
 * Mozes ID could not be found in our system.
 
+
+
+## Submit Comment
+
+`/v1/campaign/submit_comment` - Posts a message to a message display (Text to Screen) campaign on behalf of a user.
+
+### Request Parameters
+
+`campaign_id` The ID of the message display campaign.
+
+`project_id` The ID of the project associated with this campaign.
+
+`mozes_id` The ID of the user posting the comment. (use [user api](user.md) to lookup)
+
+`comment` String containing the message to be displayed on screen.
+
+### Response Data
+
+`none` 
+
+### Example Request
+
+```json
+{
+    "campaign_id": "97483",
+    "project_id": "78945",
+    "mozes_id": "12545135",
+    "comment": "Hi Mom!"
+}
+```
+
+### Example Response
+
+```json
+{
+  "status": {
+    "code": 0,
+    "name": "OK",
+    "description": "OK"
+  },
+  "response": []
+}
+```
+
+### Return Codes
+
+
+`10004 : INVALID_MOZES_ID`
+* Mozes ID could not be found in our system.
+
+`13003 : PROJECT_INVALID_CAMPAIGN_ID`
+* The campaign ID passed is invalid.
